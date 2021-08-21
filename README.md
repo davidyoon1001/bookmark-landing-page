@@ -1,9 +1,10 @@
-# Frontend Mentor - Bookmark landing page
+# [Live Demo](https://davidyoon1001.github.io/tip-calculator-app/) - Bookmark landing page
 
 ![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
 
+This project is led by [Frontend Mentor](https://www.frontendmentor.io) challenges to help improve coding skills by building realistic projects.
 ---
 
 ## The challenge
