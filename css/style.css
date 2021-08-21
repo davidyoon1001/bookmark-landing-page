@@ -1,0 +1,135 @@
+:root{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+/* nav bar */
+
+.top-nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 160px;
+}
+
+.nav-category-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 2.5rem;
+    align-items: center;
+}
+.nav-category-wrapper label{
+    font-size: .7rem;
+    letter-spacing: .1rem;
+    color: hsl(229, 31%, 21%);
+    font-weight: 400;
+    
+}
+.nav-category-wrapper label:nth-child(4){
+    color: white;
+    padding: .7rem 1.7rem;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0px 1px 5px gray;
+    background: hsl(0, 94%, 66%);
+}
+/* top content */
+.top-content-wrapper{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-left-wrapper{
+    width: 35%;
+    margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.content-left-wrapper h1{
+    color: hsl(229, 31%, 21%);
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.content-left-wrapper p{
+    line-height: 1.5rem;
+    color: gray;
+    font-weight: lighter;
+}
+.buttons-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+.buttons{
+    background-color: hsl(231, 69%, 60%);
+    font-size: .8rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.8rem 1.4rem;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px gray;
+}
+.content-right-wrapper{
+    z-index: 0;
+    width: 55%;
+    position: relative;
+}
+.content-right-wrapper img{
+    position: absolute;
+    right: 7%;
+    z-index: 2;
+}
+.rounded-blue-background-shape{
+    z-index: 3;
+    margin-top: 8rem;
+    margin-left: auto;
+    border-radius: 10rem 0px 0px 10rem;
+    height: 20rem;
+    width: 30rem;
+    background-color: hsl(231, 69%, 60%);
+}
+
+/* features content */
+.features-content-wrapper{
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+}
+.features-content-wrapper h2{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: hsl(229, 31%, 21%);
+}
+.features-content-wrapper p{
+    margin-left: auto;
+    margin-right: auto;
+    width: 37%;
+    line-height: 1.5rem;
+    color: gray;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
