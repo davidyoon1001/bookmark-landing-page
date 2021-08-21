@@ -1,4 +1,4 @@
-# [Live Demo](https://davidyoon1001.github.io/tip-calculator-app/) - Bookmark landing page
+# [Live Demo](https://davidyoon1001.github.io/bookmark-landing-page/) - Bookmark landing page
 
 ![Design preview for the Bookmark landing page coding challenge](./design/desktop-preview.jpg)
 
