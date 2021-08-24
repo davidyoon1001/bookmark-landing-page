@@ -88,8 +88,10 @@ side_nav_buttons.forEach((elem) => {
     elem.addEventListener("click", () => {
         if (elem.alt == "icon-hamburger") {
             document.querySelector(".side-nav").style.display = "flex";
+            document.querySelector(".top-nav-wrapper").style.cssText = "opacity:0;"
         } else {
             document.querySelector(".side-nav").style.display = "none";
+            document.querySelector(".top-nav-wrapper").style.cssText = "opacity:1;"
         }
     })
 })
