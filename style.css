@@ -27,7 +27,9 @@ body{
 .top-nav-wrapper img:nth-child(2){
     display: none;
 }
-
+.side-nav{
+    display: none;
+}
 .category-wrapper{
     display: flex;
     justify-content: space-between;
@@ -762,7 +764,8 @@ body{
         padding-bottom: 2rem;
     }
     .extension-content{
-        width: 75%;
+        /* width: 75%; */
+        width: 50%;
         margin: auto;
     }
     .extension-content img:nth-child(4){
@@ -925,5 +928,12 @@ body{
         margin-top: 2.4rem;
         height: 12rem;
         width: 80%;
+    }
+    /* download extesions ***********************************************/
+    /* download extesions ***********************************************/
+    /* download extesions ***********************************************/
+    .extension-content{
+        width: 75%;
+
     }
 }
