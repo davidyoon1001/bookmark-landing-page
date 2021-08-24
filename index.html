@@ -6,26 +6,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/ress.css">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <title>David Yoon | Bookmark landing page</title>
-
 </head>
 
 <body>
+  <div class="side-nav-wrapper">
+    <div class="side-nav">
+      <div class="side-nav-header">
+        <div class="logo-bookmark-with-special-touch">
+          <img src="images/logo-bookmark.svg" alt="logo-bookmark">
+          <label>BOOKMARK</label>
+        </div>
+        <img class="side-nav-toggle" src="/images/icon-close.svg" alt="icon-close">
+      </div>
+      <div class="category-wrapper">
+        <label class="side-nav-toggle">FEATURES</label>
+        <label class="side-nav-toggle">PRICING</label>
+        <label class="side-nav-toggle">CONTACT</label>
+        <button>LOGIN</button>
+      </div>
+      <div class="icons">
+        <img src="images/icon-facebook.svg" alt="icon-facebook">
+        <img src="images/icon-twitter.svg" alt="icon-twitter">
+      </div>
+    </div>
+  </div>
   <div class="top-nav-wrapper">
-    <a href="#"><img src="/images/logo-bookmark.svg" alt="logo-bookmark"></a>
+    <img src="/images/logo-bookmark.svg" alt="logo-bookmark">
+    <img class="side-nav-toggle" src="images/icon-hamburger.svg" alt="icon-hamburger">
     <div class="category-wrapper">
       <label>FEATURES</label>
       <label>PRICING</label>
       <label>CONTACT</label>
-      <label>LOGIN</label>
+      <button>LOGIN</button>
     </div>
+
   </div>
+
   <div class="top-content-wrapper">
     <div class="content-left-wrapper">
       <h1>A Simple Bookmark Manager</h1>
-      <p>A clean and simple interface to organize your favourite websites. Open a new
+      <p>A clean and simple linterface to organize your favourite websites. Open a new
         browser tab and see your sites load instantly. Try it for free.</p>
       <div class="buttons-wrapper">
         <button class="buttons">Get it on Chrome</button>
@@ -43,9 +67,9 @@
       Your bookmarks sync between your devices so you can access them on the go.</p>
   </div>
   <div class="features-button-wrapper">
-    <button>Simple Bookmarking</button>
-    <button>Speedy Searching</button>
-    <button>Easy sharing</button>
+    <button class="feature-buttons">Simple Bookmarking</button>
+    <button class="feature-buttons">Speedy Searching</button>
+    <button class="feature-buttons">Easy sharing</button>
   </div>
   <div class="features-carousel-wrapper">
     <div class="img-content-left-wrapper">
@@ -170,8 +194,17 @@
     <p>35,000+ ALREADY JOINED</p>
     <h2>Stay up-to-date with what we're doing</h2>
     <div class="email-wrapper">
-      <input class="email" type="email" required="required" placeholder="Enter your email address">
-      <input class="buttons" type="submit" value="Contact Us">
+      <form>
+        <div class="email-event-wrapper">
+          <div class="email-error-icon">
+            <input class="email" type="email" required="required" placeholder="Enter your email address">
+            <img src="images/icon-error.svg" alt="icon-error">
+          </div>
+          <p>Whoops, make sure it's an email</p>
+        </div>
+        <input class="buttons" type="submit" value="Contact Us">
+      </form>
+
     </div>
   </div>
   <div class="footer-wrapper">
@@ -197,6 +230,7 @@
       Coded by <a href="http://3.17.201.176/" target="_blank">David Yoon</a>.
     </p>
   </footer>
+  <script src="js/index.js"></script>
 </body>
 
 </html>
