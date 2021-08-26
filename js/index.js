@@ -70,8 +70,8 @@ elements.oninvalid = function (error) {
 }
 
 navigators.forEach((elem) => {
-    var nav = elem.querySelectorAll("label")
-    elem.querySelectorAll("label").forEach((elem) => {
+    var nav = elem.querySelectorAll("a")
+    elem.querySelectorAll("a").forEach((elem) => {
         elem.addEventListener("click", () => {
             var scrollTo = 0;
             for (i = 0; i < nav.length; i++) {
@@ -86,7 +86,8 @@ navigators.forEach((elem) => {
 
 side_nav_buttons.forEach((elem) => {
     elem.addEventListener("click", () => {
-        if (elem.alt == "icon-hamburger") {
+        console.log(elem.querySelector("img").alt);
+        if (elem.querySelector("img").alt == "hamburger") {
             document.querySelector(".side-nav").style.display = "flex";
             document.querySelector(".top-nav-wrapper").style.cssText = "opacity:0;"
         } else {
