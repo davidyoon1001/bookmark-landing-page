@@ -86,13 +86,16 @@ navigators.forEach((elem) => {
 
 side_nav_buttons.forEach((elem) => {
     elem.addEventListener("click", () => {
-        console.log(elem.querySelector("img").alt);
-        if (elem.querySelector("img").alt == "hamburger") {
+        if (elem.parentElement.className == "category-wrapper") {
+            document.querySelector(".side-nav").style.display = "none";
+            document.querySelector(".top-nav-wrapper").style.cssText = "opacity:1;"
+        } else if (elem.querySelector("img").alt == "hamburger") {
             document.querySelector(".side-nav").style.display = "flex";
             document.querySelector(".top-nav-wrapper").style.cssText = "opacity:0;"
         } else {
             document.querySelector(".side-nav").style.display = "none";
             document.querySelector(".top-nav-wrapper").style.cssText = "opacity:1;"
         }
+
     })
 })
